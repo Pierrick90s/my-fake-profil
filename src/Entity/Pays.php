@@ -16,6 +16,11 @@ class Pays
     #[ORM\Column(length: 255)]
     private ?string $nom = null;
 
+    // public function __construct(string $nom)
+    // {
+    //     $this->nom = $nom;
+    // }
+
     public function getId(): ?int
     {
         return $this->id;

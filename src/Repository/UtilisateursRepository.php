@@ -21,12 +21,12 @@ class UtilisateursRepository extends ServiceEntityRepository
         parent::__construct($registry, Utilisateurs::class);
     }
 
-    public function findByNom(string $nom): array
-    {
-        return $this->createQueryBuilder('p')
-                    ->where('p.nom = :nom')
-                    ->setParameter('nom', $nom)
-                    ->getQuery()
-                    ->getResult();
-    }
+    // public function findByNom(string $nom): array
+    // {
+    //     return $this->createQueryBuilder('p')
+    //                 ->where('p.nom = :nom')
+    //                 ->setParameter('nom', $nom)
+    //                 ->getQuery()
+    //                 ->getResult();
+    // }
 }

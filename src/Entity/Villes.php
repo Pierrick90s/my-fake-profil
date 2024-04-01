@@ -20,6 +20,12 @@ class Villes
     #[ORM\JoinColumn(nullable: false)]
     private ?Pays $pays = null;
 
+    // public function __construct(string $nom, string $pays)
+    // {
+    //     $this->nom = $nom;
+    //     $this->pays = $pays;
+    // }
+
     public function getId(): ?int
     {
         return $this->id;

@@ -53,9 +53,9 @@ class MainController extends AbstractController
 
     public function index(UtilisateursRepository $repository): Response
     {
-        // $utilisteurs = $repository->findAll();
+        $utilisateurs = $repository->findAll();
 
-        $utilisateurs = $repository->findByNom("Gauvain");
+        // $utilisateurs = $repository->findByNom("Gauvain");
         dd($utilisateurs);
     }
 }
